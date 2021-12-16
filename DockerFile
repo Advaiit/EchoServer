@@ -1,6 +1,6 @@
 #base image
 FROM openjdk:11
-COPY . /src/java
-WORKDIR /src/java
+COPY . /home/dsdoptimize/EchoServer
+WORKDIR /home/dsdoptimize/EchoServer
 RUN javac EchoServer.java
 CMD ["java", "EchoServer"]
